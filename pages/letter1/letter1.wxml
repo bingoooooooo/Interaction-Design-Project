@@ -1,0 +1,49 @@
+<view class="flex-col page space-y-33">
+  <view class="flex-row justify-between items-center">
+    <image
+      class="image_2"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
+    />
+    <image
+      class="image"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591615157940.png"
+    />
+  </view>
+  <view class="flex-row justify-center items-center relative group">
+    <view class="flex-col self-stretch group_2 space-y-27 pos">
+      <image
+        class="image_3"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591653402772.png"
+      />
+      <view class="flex-col space-y-26">
+        <view class="flex-col items-center">
+          <image
+            class="image_4"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591637650884.png"
+          />
+          <image
+            class="image_5"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/581eb448f98dac68d3a6bb86cb77187c.png"
+          />
+        </view>
+        <view class="flex-col items-end group_5">
+          <image
+            class="shrink-0 image_7"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/0b84d4bbf739236dadbd464674574e44.png"
+          />
+          <image
+            class="shrink-0 image_6"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591622374385.png"
+          />
+        </view>
+      </view>
+    </view>
+    <view class="flex-col group_3 space-y-29">
+      <view class="section"></view>
+      <view class="flex-row group_4 space-x-32">
+        <view class="section_2"></view>
+        <view class="section_2"></view>
+      </view>
+    </view>
+  </view>
+</view>
