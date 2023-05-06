@@ -1,0 +1,9 @@
+<view class="flex-col justify-start items-center page">
+  <view class="title">
+    Mood Diary
+  </view>
+  <image
+    class="image"
+    src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825944644545627091.png"
+  />
+</view>

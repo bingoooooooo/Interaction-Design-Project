@@ -1,0 +1,50 @@
+.page {
+  padding: 0 47.1rpx 1170.29rpx 56.16rpx;
+  background-color: #ffffff;
+  background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952600220986234.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.group {
+  padding: 43.48rpx 0;
+}
+.image_2 {
+  margin-top: 10.87rpx;
+  opacity: 0.37;
+  width: 65.22rpx;
+  height: 57.97rpx;
+}
+.image {
+  opacity: 0.37;
+  width: 65.22rpx;
+  height: 65.22rpx;
+}
+.group_2 {
+  opacity: 0.45;
+}
+.space-y-26 > view:not(:first-child),
+.space-y-26 > text:not(:first-child),
+.space-y-26 > image:not(:first-child) {
+  margin-top: 47.1rpx;
+}
+.image_3 {
+  width: 72.46rpx;
+  height: 72.46rpx;
+}
+.image_4 {
+  width: 57.97rpx;
+  height: 70.65rpx;
+}
+.image_5 {
+  margin-left: -10.87rpx;
+  width: 28.99rpx;
+  height: 54.35rpx;
+}
+.image_6 {
+  width: 68.84rpx;
+  height: 59.78rpx;
+}

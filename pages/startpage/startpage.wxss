@@ -1,0 +1,19 @@
+.page {
+  background-image: linear-gradient(180deg, #f7ba635c 0%, #f1b66063 45.7%, #5869176b 100%);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.image {
+  margin-top: -170px;
+  width: 2800rpx;
+  height: 3022.66rpx;
+}
+.title{
+  font-size: 50px;
+  font-weight: bold;
+  color: #f5b153;
+  height:50px;
+  line-height: 750px;
+}

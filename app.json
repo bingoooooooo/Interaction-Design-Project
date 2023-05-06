@@ -1,12 +1,10 @@
 {
     "pages": [
+      "pages/startpage/startpage",
       "pages/userpage/userpage",
       "pages/letter1/letter1"
       
       
-      
-      
-       
     ],
     "window": {
         "backgroundTextStyle": "light",

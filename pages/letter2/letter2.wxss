@@ -1,0 +1,98 @@
+.page {
+  padding: 47.1rpx 47.1rpx 1123.19rpx 57.97rpx;
+  background-color: #ffffff;
+  background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952600220986234.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.space-y-26 > view:not(:first-child),
+.space-y-26 > text:not(:first-child),
+.space-y-26 > image:not(:first-child) {
+  margin-top: 47.1rpx;
+}
+.image_2 {
+  opacity: 0.37;
+  width: 65.22rpx;
+  height: 57.97rpx;
+}
+.image {
+  opacity: 0.37;
+  width: 65.22rpx;
+  height: 65.22rpx;
+}
+.group {
+  padding-top: 76.09rpx;
+}
+.group_2 {
+  opacity: 0.46;
+}
+.space-y-27 > view:not(:first-child),
+.space-y-27 > text:not(:first-child),
+.space-y-27 > image:not(:first-child) {
+  margin-top: 48.91rpx;
+}
+.pos {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.image_3 {
+  width: 72.46rpx;
+  height: 72.46rpx;
+}
+.image_4 {
+  width: 68.84rpx;
+  height: 28.99rpx;
+}
+.image_5 {
+  width: 57.97rpx;
+  height: 32.61rpx;
+}
+.group_4 {
+  height: 68.84rpx;
+}
+.image_7 {
+  margin-top: 18.12rpx;
+  border-radius: 3.62rpx;
+  width: 79.71rpx;
+  height: 50.72rpx;
+}
+.image_6 {
+  margin-right: 10.87rpx;
+  margin-top: -68.84rpx;
+  width: 12.68rpx;
+  height: 21.74rpx;
+}
+.group_3 {
+  width: 298.91rpx;
+}
+.space-y-29 > view:not(:first-child),
+.space-y-29 > text:not(:first-child),
+.space-y-29 > image:not(:first-child) {
+  margin-top: 52.54rpx;
+}
+.section {
+  background-color: #ffffff;
+  border-radius: 56.16rpx;
+  height: 112.32rpx;
+  border: solid 1.81rpx #707070;
+}
+.group_5 {
+  padding-left: 21.74rpx;
+  padding-right: 16.3rpx;
+}
+.space-x-32 > view:not(:first-child),
+.space-x-32 > text:not(:first-child),
+.space-x-32 > image:not(:first-child) {
+  margin-left: 57.97rpx;
+}
+.section_2 {
+  background-color: #ffffff;
+  border-radius: 48.91rpx;
+  width: 101.45rpx;
+  height: 96.01rpx;
+}
