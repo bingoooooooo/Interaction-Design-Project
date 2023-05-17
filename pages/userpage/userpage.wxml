@@ -40,12 +40,15 @@
     <view class="flex-col group_3">
       <view class="flex-row group_4 space-x-20">
         <view class="section_5">
+          <view class="word_middle">3</view>
           <view class="word_bottom">记录次数</view>
         </view>
         <view class="section_5">
+          <view class="word_middle">5</view>
           <view class="word_bottom">提醒事件</view>
         </view>
         <view class="section_5">
+          <view class="word_middle">0</view>
           <view class="word_bottom">消息</view>
         </view>
 
@@ -85,7 +88,7 @@
     <view class="flex-col">
       
       <view class="flex-col justify-start relative group_9">
-        <navigator url="../letter1/letter1">
+        <navigator url="../letter0/letter0" open-type="redirect">
          <view class="section_9">
             <text class="word_left">日记 </text>
             <text class="word_right">DIARY</text>
@@ -108,14 +111,16 @@
         />
       </view>
       <view class="flex-col justify-start relative group_9">
-        <view class="section_9">
-          <text class="word_left">社交区</text>
-          <text class="word_right">SOCIAL</text>
-        </view>
-        <image
-          class="image_17"
-          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943669838974213.png"
-        />
+        <navigator url="../community/community" open-type="redirect">
+          <view class="section_9">
+            <text class="word_left">社交区</text>
+            <text class="word_right">SOCIAL</text>
+          </view>
+          <image
+            class="image_17"
+           src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943669838974213.png"
+          />
+        </navigator>
       </view>
       <view class="flex-col justify-start relative group_9">
         <view class="section_9">

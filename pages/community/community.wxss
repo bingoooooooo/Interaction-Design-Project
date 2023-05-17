@@ -1,0 +1,226 @@
+.page {
+  background-color: #88827b;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.group {
+  padding: 131.43rpx 47.31rpx 0;
+  overflow-y: auto;
+  position: relative;
+  top:-50px;
+}
+.image {
+  width: 15.77rpx;
+  height: 31.54rpx;
+  position: relative;
+  top:8px;
+  right:-63px;
+}
+.image_2 {
+  margin-right: 22.78rpx;
+}
+.topmenu{
+  position: fixed;
+  z-index: 2;
+  top:0px;
+  background-color: #e9e9e9;
+  width:100%;
+  height:60px;
+  margin-bottom: 0px;
+}
+.group_2 {
+  margin: 68.34rpx 7.01rpx -17.52rpx 0;
+  overflow: hidden;
+  height: 300.36rpx;
+}
+.section {
+  opacity: 0.99;
+  background-color: #e8b385;
+  border-radius: 14.02rpx;
+  height: 231.31rpx;
+  border: solid 1.75rpx #707070;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.group_3 {
+  width: 334.7rpx;
+}
+
+.pos3{
+  position: relative;
+  top:-100px;
+  left:60px;
+  width:50px;
+}
+.image_3 {
+  border-radius: 50%;
+  width: 82.36rpx;
+  height: 82.36rpx;
+}
+.image_4 {
+  margin-top: 8.76rpx;
+  width: 70.09rpx;
+  height: 1.75rpx;
+}
+.image_5 {
+  margin-top: 21.03rpx;
+}
+.image_6 {
+  width: 29.79rpx;
+  height: 31.54rpx;
+  position:relative;
+  left:-50px;
+}
+.section_2 {
+  background-color: #140909;
+  border-radius: 45.56rpx;
+  width: 82.36rpx;
+  height: 50.82rpx;
+  border: solid 1.75rpx #707070;
+}
+.group_4 {
+  width: 134.05rpx;
+}
+.space-x-16 > view:not(:first-child),
+.space-x-16 > text:not(:first-child),
+.space-x-16 > image:not(:first-child) {
+  margin-left: 28.04rpx;
+}
+.pos_2 {
+  position: absolute;
+  right: 27.16rpx;
+  top: 180.49rpx;
+}
+.image_7 {
+  width: 29.79rpx;
+  height: 24.53rpx;
+}
+.font_1 {
+  font-size: 17.52rpx;
+  font-family: SegoeUI;
+  line-height: 12.27rpx;
+  color: #88827b;
+}
+.space-x-4 > view:not(:first-child),
+.space-x-4 > text:not(:first-child),
+.space-x-4 > image:not(:first-child) {
+  margin-left: 7.01rpx;
+}
+.image_2 {
+  opacity: 0.37;
+  width: 72.46rpx;
+  height: 57.97rpx;
+  position: absolute;
+  top:12px;
+  left:10px;
+  z-index: 2;
+}
+.image_8 {
+  width: 28.04rpx;
+  height: 28.04rpx;
+  position: relative;
+  top:0px;
+}
+.text {
+  line-height: 13.14rpx;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 55px;
+}
+.list {
+  margin: 35.05rpx 0 -45.56rpx;
+}
+.space-y-20 > view:not(:first-child),
+.space-y-20 > text:not(:first-child),
+.space-y-20 > image:not(:first-child) {
+  margin-top: 35.05rpx;
+}
+.list-item {
+  padding: 17.52rpx 14.02rpx 17.52rpx 28.04rpx;
+  background-color: #e7b284;
+  height:231.31rpx;
+  border-radius: 14.02rpx;
+  border: solid 1.75rpx #707070;
+  margin-bottom:6px;
+  margin-top: 6px;
+}
+.space-y-14 > view:not(:first-child),
+.space-y-14 > text:not(:first-child),
+.space-y-14 > image:not(:first-child) {
+  margin-top: 24.53rpx;
+}
+.space-x-14 > view:not(:first-child),
+.space-x-14 > text:not(:first-child),
+.space-x-14 > image:not(:first-child) {
+  margin-left: 24.53rpx;
+}
+.text-wrapper {
+  padding: 14.02rpx 0 7.01rpx;
+  background-color: #140909;
+  border-radius: 45.56rpx;
+  width: 82.36rpx;
+  height: 50.82rpx;
+  border: solid 1.75rpx #707070;
+  position:relative;
+  left:-50px;
+}
+.text_2 {
+  color: #707070;
+  font-size: 26.29rpx;
+  font-family: SegoeUI;
+  line-height: 24.53rpx;
+}
+.text_3 {
+  color: #707070;
+  font-size: 31.54rpx;
+  font-family: SegoeUI;
+  line-height: 29.79rpx;
+  position: relative;
+  top:-90px;
+}
+.text_4{
+  color: #707070;
+  font-size: 31.54rpx;
+  font-family: SegoeUI;
+  line-height: 29.79rpx;
+  position:relative;
+  top:6px;
+}
+.group_5 {
+  padding: 0 42.06rpx;
+  position: relative;
+  top:-95px;
+}
+.space-x-24-reverse > view:not(:last-child),
+.space-x-24-reverse > text:not(:last-child),
+.space-x-24-reverse > image:not(:last-child) {
+  margin-right: 42.06rpx;
+}
+.image_9 {
+  width: 35.05rpx;
+  height: 29.79rpx;
+}
+.tab-bar {
+  background-color: #e7b284;
+  width: 70.09rpx;
+  height: 1.75rpx;
+}
+.image-wrapper {
+  padding: 38.55rpx 0;
+  background-color: #707070;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  border: solid 1.75rpx #707070;
+  position: fixed;
+  left:43.5%;
+  bottom: 20px;
+}
+.image_10 {
+  width: 90.39rpx;
+  height: 84.99rpx;
+  position: absolute;
+  bottom:7rpx;
+}

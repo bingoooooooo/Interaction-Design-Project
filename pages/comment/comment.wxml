@@ -1,0 +1,162 @@
+<view class="topmenu">
+  <view class="text">
+    匿名交流
+  </view>
+  <navigator url="../community/community"  open-type="navigateBack">
+    <image
+      class="image_11"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
+    />
+    </navigator>
+</view>
+<view class="flex-col page">
+  <view class="flex-col list-item space-y-15">
+    <view class="poss">
+      <image
+        class="image_12"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679997887339.png"
+      />
+      <view class="flex-row space-x-15 pos3">
+        <text class="text_8">赛文</text>
+        <image
+          class="self-start image_13"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096686957002029.png"
+        />
+        <image
+          class="self-center image_14"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679878260699.png"
+        />
+        <view class="flex-col justify-start items-center text-wrapper"><text class="text_9">匿名</text></view>
+        <image
+          class="image_15"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679826300301.png"
+        />
+      </view>   
+    </view>
+    <text class="self-start text_10">可以空腹喝牛奶吗？</text>
+    <view class="flex-row justify-end group_11 space-x-24-reverse">
+      <view bindtap='onLike'>
+        <image
+          class="image_16" animation="{{animation}}"
+          src="{{like?icon_like:icon_unlike}}"
+        />
+        <text>{{count}}</text>
+        </view>
+        <view  bindtap="com">
+          <image
+            class="image_17"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679959933691.png"
+          />
+        <text>{{comCount}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col group_3 space-y-18">
+    <view class="divider"></view>
+    <view class="self-start group_4">
+      <text class="text_3">{{comCount}}</text>
+      <text class="text_4">评论</text>
+    </view>
+  </view>
+  <view wx:if="{{flag}}" class="flex-col group_8 space-y-5">
+    <view class="flex-col self-start group_9">
+      <view class="flex items-center space-x-14">
+        <image
+          class="image"
+          src="http://a1.qpic.cn/psc?/V149AYda4WkoPW/bqQfVz5yrrGYSXMvKr.cqdM2Fp.uvqcPMPFMihU47gpZFxp*YHINSKP3eeqTJMRQgWpaq1WsZp.vHWiqf8kXTwC1jUIC0QOsYgRilPqREYI!/c&ek=1&kp=1&pt=0&bo=kgSFBJIEhQQWECA!&tl=3&vuin=821210986&tm=1684332000&dis_t=1684333994&dis_k=3b8920821c54054d73d4f099612e40ad&sce=60-2-2&rf=0-0"
+        />
+        <text class="font_2">煎饼</text>
+      </view>
+      <text class="self-end font_3 text_7">{{content}}</text>
+      <image
+        class="shrink-0 self-start image_9"
+        src="https://a1.qpic.cn/psc?/V149AYda4WkoPW/bqQfVz5yrrGYSXMvKr.cqX22X22cT5mCaGh6UjAheKyVDsMcRKuWbD3g6oF8A7ulOUxK3pWaUoTBhOzASPeHZRYAhwHW5TOluIKvuxIhR4s!/c&ek=1&kp=1&pt=0&bo=lAF6AZQBegEWECA!&tl=3&vuin=821210986&tm=1684332000&dis_t=1684333813&dis_k=6092d48a7e5cd505a6fbae848ff46602&sce=60-2-2&rf=0-0"
+      />
+    </view>
+    <view class="flex-row justify-between items-center group_10">
+      <view class="flex group_7">
+        <text class="self-start font_4">04-13</text>
+        <text class="self-end font_5 text_6">回复</text>
+        <text class="self-end font_5 text_6">删除</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col group_8 space-y-5">
+    <view class="flex-col self-start group_9">
+      <view class="flex items-center space-x-14">
+        <image
+          class="image"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548175713714033.png"
+        />
+        <text class="font_2">锄禾</text>
+      </view>
+      <text class="self-end font_3 text_7">合理的睡眠时间：确保自己每天有足够的睡眠时间，晚上七至八小时的睡眠时间是比较合适的。慢慢起床：早上醒来后，可以先静静地躺着，慢慢地起身，给身体一些适应的时间。喝水：早上起床后喝一杯水，有助于缓解口渴和帮助身体更快地清醒。</text>
+    </view>
+    <view class="flex-row justify-between items-center group_10">
+      <view class="flex group_7">
+        <text class="self-start font_4">04-13</text>
+        <text class="self-end font_5 text_6">回复</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col group_5 space-y-14">
+    <view class="flex-col space-y-4">
+      <view class="flex items-center space-x-14">
+        <image
+          class="image"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548194177570979.png"
+        />
+        <text class="font_2">旱地</text>
+      </view>
+      <text class="self-start font_3 text_5">你是正确的</text>
+    </view>
+    <view class="flex-row justify-between items-center group_6">
+      <view class="flex group_7">
+        <text class="self-start font_4">04-13</text>
+        <text class="self-end font_5 text_6">回复</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col group_8 space-y-5">
+    <view class="flex-col self-start group_9">
+      <view class="flex items-center space-x-14">
+        <image
+          class="image"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548175728244510.png"
+        />
+        <text class="font_2">床前</text>
+      </view>
+      <text class="self-end font_3 text_7">早上起床后喝一杯水，有助于缓解口渴和帮助身体更快地清醒。</text>
+      <image
+        class="shrink-0 self-start image_9"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548175692021966.png"
+      />
+    </view>
+    <view class="flex-row justify-between items-center group_10">
+      <view class="flex group_7">
+        <text class="self-start font_4">04-13</text>
+        <text class="self-end font_5 text_6">回复</text>
+      </view>
+    </view>
+  </view>
+  
+</view>
+<view class="bottommenu">
+  <view class="text" style="display: flex;">
+    <view style="text-align: center;width: 50%;"  bindtap="onLike">
+      <image
+        class="image_16" animation="{{animation}}"
+        src="{{like?icon_like:icon_unlike}}"
+      /> 点赞</view>
+    <text>|</text>
+      <view style="text-align: center;width: 50%;" bindtap="com">
+        <image
+        class="image_17"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679959933691.png"
+      /> 评论</view>
+  </view>
+</view>
+<view wx:if="{{comment}}" class="comment" style="bottom:{{bottomHeight}}px;">
+  <textarea class="textarea" show-confirm-bar="{{false}}" auto-height="true" auto-focus="true" cursor-spacing='0' adjust-position="{{false}}"  	 placeholder="评论" maxlength="1000" value="{{content}}" bindfocus="bindfocus" bindinput="bindinput" bindblur="bindblur"></textarea>
+  <button type="primary" class="send_out" style="width:100rpx;" disabled="{{content?false:true}}" bindtap="sendOut" >发送</button>
+</view>

@@ -303,10 +303,15 @@
   text-align: center;
   font-size: 18px;
   color:#c0c0c0;
+  height:55px;
+  line-height: 35px;
+}
+.word_middle{
+  text-align: center;
+  font-size: 40px;
+  color:#c0c0c0;
   height:45px;
-  line-height: 45px;
-  height:100px;
-  line-height: 120px;
+  line-height: 50px;
 }
 .font1{
   color:#f1c179;

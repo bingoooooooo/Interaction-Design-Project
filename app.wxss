@@ -21,7 +21,6 @@ text {
 .flex-col {
   display: flex;
   flex-direction: column;
-
 }
 
 .justify-start {

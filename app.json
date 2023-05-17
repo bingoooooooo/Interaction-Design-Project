@@ -1,17 +1,20 @@
 {
-    "pages": [
-      "pages/startpage/startpage",
-      "pages/userpage/userpage",
-      "pages/letter1/letter1"
-      
-      
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
-        "navigationBarTextStyle": "black"
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    
+    "pages/community/community",
+    "pages/comment/comment",
+    "pages/letter0/letter0",
+    "pages/startpage/startpage",
+    "pages/userpage/userpage",
+    
+    "pages/letter1/letter1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
