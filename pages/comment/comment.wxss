@@ -423,3 +423,40 @@
   position: absolute;
   right: 24rpx;
 }
+.modals {
+  position:fixed;
+  z-index:2;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+ }
+  
+ .modals-cancel {
+  position:absolute;
+  z-index:3;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0, .5);
+ }
+  
+ .bottom-dialog-body {
+  position:absolute;
+  z-index:4;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:30rpx;
+  height:150rpx;
+  background-color:#e7b284;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 20px;
+ }
+
+ .bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+ }

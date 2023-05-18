@@ -1,7 +1,6 @@
 var app=getApp();
 Page({
   data: {
-    // list_omf12FXL: [onLike, onLike, onLike, onLike, onLike],
     icon_like:'https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548175707643912.png',
     icon_unlike:'https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679921619599.png',
     like:'',
@@ -10,7 +9,9 @@ Page({
     bottomHeight:0,
     comment:0,
     comCount:'',
-    flag:''
+    flag:'',
+    hideModal:true,
+    animationData:{},
   },
   onLike(e){
     wx.vibrateShort({
@@ -60,16 +61,18 @@ Page({
     })
   },
   bindinput(e){
-    this.setData({
-      content:e.detail.value
-    })
-    app.globalData.content=this.data.content
+    if(!this.data.flag){
+      this.setData({
+        content:e.detail.value
+      })
+    }
   },
   bindblur(e){
     console.log(e, '收起键盘')
     this.setData({
       bottomHeight:0,
-      comment:0
+      comment:0,
+      content:e.detail.value
     })
   },
   sendOut(){
@@ -79,6 +82,7 @@ Page({
         comCount:this.data.comCount+1,
         flag:true
       })
+      app.globalData.content=this.data.content
       app.globalData.flag=this.data.flag
       app.globalData.comCount=this.data.comCount
     }
@@ -87,5 +91,83 @@ Page({
     this.setData({
       comment:1
     })
-  }
+  },
+  del(){
+    wx.showModal({
+      title: '提示',
+      content: '确定删除这条评论吗？',
+      complete: (res) => {
+        if (res.confirm) {
+          this.setData({
+            flag:false,
+            comCount:this.data.comCount-1,
+            content:''
+          })
+          app.globalData.flag=this.data.flag
+          app.globalData.comCount=this.data.comCount
+          app.globalData.content=this.data.content
+        }
+      }
+    })
+  },
+  showModal:function () {
+    var that=this;
+    that.setData({
+     hideModal:false
+    })
+    var animation = wx.createAnimation({
+     duration: 100,
+     timingFunction:'ease',
+    })
+    this.animation = animation
+    setTimeout(function(){
+     that.fadeIn();
+    },100) 
+  },
+  hideModal:function () {
+    var that=this;
+    var animation = wx.createAnimation({
+     duration: 50,
+     timingFunction:'ease',
+    })
+    this.animation = animation
+    that.fadeDown();
+    setTimeout(function(){
+     that.setData({
+      hideModal:true
+     })  
+    },50)
+  },
+   
+  fadeIn:function(){
+    this.animation.translateY(0).step()
+    this.setData({
+     animationData:this.animation.export()
+    }) 
+  },
+  fadeDown:function(){
+    this.animation.translateY(300).step()
+    this.setData({
+     animationData:this.animation.export(),
+    })
+  },
+  report(){
+    var that=this
+    wx.showModal({
+      title: '提示',
+      content: '确定举报这条评论吗？',
+      complete: (res) => {
+        if (res.confirm) {
+          wx.showModal({
+            title: '提示',
+            content: '举报成功',
+          })
+          that.hideModal()
+        }
+        if (res.cancel) {
+            that.hideModal()
+        }
+      }
+    })
+  },
 });

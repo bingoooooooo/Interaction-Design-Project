@@ -31,7 +31,7 @@
               />
               <view class="flex-col justify-start items-center text-wrapper"><text class="text_2">匿名</text></view>
               <image
-                class="image"
+                class="image" bindtap="showModal"
                 src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679826300301.png"
               />
             </view>   
@@ -65,8 +65,13 @@
       />
     </view>
   </view>
+  
   <!-- <image
     class="tab-bar"
     src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096693230985275.png"
   /> -->
+</view>
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+  <view class="modals-cancel" bindtap="hideModal"></view>
+  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" bindtap="report">举报</view>
 </view>

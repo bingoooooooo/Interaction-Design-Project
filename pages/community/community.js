@@ -6,7 +6,9 @@ Page({
     icon_unlike:'https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679921619599.png',
     like:'',
     count:'',
-    comCount:''
+    comCount:'',
+    hideModal:true,
+    animationData:{},
   },
   onLike(e){
     wx.vibrateShort({
@@ -45,5 +47,65 @@ Page({
       like:app.globalData.like,
       comCount:app.globalData.comCount,
     })
-  }
+  },
+  showModal:function () {
+    var that=this;
+    that.setData({
+     hideModal:false
+    })
+    var animation = wx.createAnimation({
+     duration: 100,
+     timingFunction:'ease',
+    })
+    this.animation = animation
+    setTimeout(function(){
+     that.fadeIn();
+    },100) 
+  },
+  hideModal:function () {
+    var that=this;
+    var animation = wx.createAnimation({
+     duration: 50,
+     timingFunction:'ease',
+    })
+    this.animation = animation
+    that.fadeDown();
+    setTimeout(function(){
+     that.setData({
+      hideModal:true
+     })  
+    },50)
+  },
+   
+  fadeIn:function(){
+    this.animation.translateY(0).step()
+    this.setData({
+     animationData:this.animation.export()
+    }) 
+  },
+  fadeDown:function(){
+    this.animation.translateY(300).step()
+    this.setData({
+     animationData:this.animation.export(),
+    })
+  },
+  report(){
+    var that=this
+    wx.showModal({
+      title: '提示',
+      content: '确定举报这条评论吗？',
+      complete: (res) => {
+        if (res.confirm) {
+          wx.showModal({
+            title: '提示',
+            content: '举报成功',
+          })
+          that.hideModal()
+        }
+        if (res.cancel) {
+            that.hideModal()
+        }
+      }
+    })
+  },
 });

@@ -27,7 +27,7 @@
           src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679878260699.png"
         />
         <view class="flex-col justify-start items-center text-wrapper"><text class="text_9">匿名</text></view>
-        <image
+        <image bindtap="showModal"
           class="image_15"
           src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679826300301.png"
         />
@@ -77,7 +77,7 @@
       <view class="flex group_7">
         <text class="self-start font_4">04-13</text>
         <text class="self-end font_5 text_6">回复</text>
-        <text class="self-end font_5 text_6">删除</text>
+        <text class="self-end font_5 text_6" bindtap="del">删除</text>
       </view>
     </view>
   </view>
@@ -159,4 +159,8 @@
 <view wx:if="{{comment}}" class="comment" style="bottom:{{bottomHeight}}px;">
   <textarea class="textarea" show-confirm-bar="{{false}}" auto-height="true" auto-focus="true" cursor-spacing='0' adjust-position="{{false}}"  	 placeholder="评论" maxlength="1000" value="{{content}}" bindfocus="bindfocus" bindinput="bindinput" bindblur="bindblur"></textarea>
   <button type="primary" class="send_out" style="width:100rpx;" disabled="{{content?false:true}}" bindtap="sendOut" >发送</button>
+</view>
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+  <view class="modals-cancel" bindtap="hideModal"></view>
+  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" bindtap="report">举报</view>
 </view>
