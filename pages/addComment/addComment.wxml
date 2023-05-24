@@ -1,0 +1,37 @@
+<view class="topmenu">
+  <view class="text1">
+    匿名交流
+  </view>
+  <view class="text2" bindtap="save">提交</view>
+  <view bindtap="report">
+    <image
+      class="image_11"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
+    />
+  </view>
+
+</view>
+<view class="flex-col page">
+  <view class="flex-col justify-start relative group">
+    <view class="flex space-x-14 pos3">
+      <image
+        class="image_8"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679997887339.png"
+      />
+      <text class="text_4">伽罗</text>
+      <image
+        class="self-start image_6"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096686957002029.png"
+      />
+      <image
+        class="self-center image_7"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/646cecd074467400114fc5a1/16848605746262586843.png"
+      />
+      <view class="flex-col justify-start items-center text-wrapper3"><text class="text_5">匿名</text></view>
+    </view>   
+    <input class="input" style="border-color: {{bordercolor}};" name="userName" placeholder="点击虚线框内位置输入" bindblur="border" />
+    
+    <view class="flex-row space-x-30 pos_4">
+    </view>
+  </view>
+</view>

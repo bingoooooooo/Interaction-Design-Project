@@ -12,6 +12,7 @@ Page({
     flag:'',
     hideModal:true,
     animationData:{},
+    c:''
   },
   onLike(e){
     wx.vibrateShort({
@@ -50,7 +51,8 @@ Page({
       like:app.globalData.like,
       comCount:app.globalData.comCount,
       content:app.globalData.content,
-      flag:app.globalData.flag
+      flag:app.globalData.flag,
+      c:app.globalData.comment
     })
   },
   bindfocus(e){

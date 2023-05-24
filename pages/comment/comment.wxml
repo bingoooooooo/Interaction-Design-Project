@@ -33,7 +33,7 @@
         />
       </view>   
     </view>
-    <text class="self-start text_10">可以空腹喝牛奶吗？</text>
+    <text class="self-start text_10">{{c}}</text>
     <view class="flex-row justify-end group_11 space-x-24-reverse">
       <view bindtap='onLike'>
         <image

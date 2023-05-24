@@ -1,13 +1,12 @@
 {
   "pages": [
-    
     "pages/community/community",
     "pages/comment/comment",
     "pages/letter0/letter0",
     "pages/startpage/startpage",
     "pages/userpage/userpage",
-    
-    "pages/letter1/letter1"
+    "pages/letter1/letter1",
+    "pages/addComment/addComment"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -72,7 +72,6 @@ Page({
       this.setData({
         bordercolor:"transparent"
       })
-      console.log(event.detail.value)
     } 
     else{
       this.setData({

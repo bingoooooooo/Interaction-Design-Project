@@ -11,7 +11,7 @@
     </navigator>
   </view>
   <view class="flex-col flex-auto group">
-    <view class="flex-col group_2">
+    <view class="flex-col group_2" wx:if="{{showme}}">
       <view class="flex-col list space-y-20">
         <view class="flex-col list-item space-y-14">
           <view>
@@ -20,7 +20,52 @@
               src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679997887339.png"
             />
             <view class="flex-row space-x-14 pos3">
-              <text class="text_4">赛文</text>
+              <text class="text_4">伽罗</text>
+              <image
+                class="self-start image_4"
+                src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096686957002029.png"
+              />
+              <image
+                class="self-center image_6"
+                src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/646cecd074467400114fc5a1/16848605746262586843.png"
+              />
+              <view class="flex-col justify-start items-center text-wrapper"><text class="text_2">匿名</text></view>
+              <image
+                class="image" bindtap="showModal"
+                src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679826300301.png"
+              />
+            </view>   
+          </view>
+          <text class="self-start text_3">{{mycom}}</text>
+          <view class="flex-row justify-end group_5 space-x-24-reverse">
+            <view bindtap='onLike'>
+              <image
+              class="image_9" animation="{{animation}}"
+              src="{{mylike?icon_like:icon_unlike}}"
+              />
+              <text>{{mycount}}</text>
+            </view>
+            <navigator url="../comment/comment" bindtap="comment">
+              <image
+              class="image_8"
+              src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679959933691.png"
+              />
+              <text>{{mycomcount}}</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col group_2" wx:for="{{obj}}" wx:key="*this" wx:for-item="item">
+      <view class="flex-col list space-y-20">
+        <view class="flex-col list-item space-y-14">
+          <view>
+            <image
+              class="image_3"
+              src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679997887339.png"
+            />
+            <view class="flex-row space-x-14 pos3">
+              <text class="text_4">{{item.name}}</text>
               <image
                 class="self-start image_4"
                 src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096686957002029.png"
@@ -31,21 +76,21 @@
               />
               <view class="flex-col justify-start items-center text-wrapper"><text class="text_2">匿名</text></view>
               <image
-                class="image" bindtap="showModal"
+                class="image" bindtap="showModal" data-id="{{item.id}}"
                 src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679826300301.png"
               />
             </view>   
           </view>
-          <text class="self-start text_3">可以空腹喝牛奶吗？</text>
+          <text class="self-start text_3">{{item.content}}</text>
           <view class="flex-row justify-end group_5 space-x-24-reverse">
-            <view bindtap='onLike'>
+            <view bindtap='onLike' data-id="{{item.id}}">
               <image
-              class="image_9" animation="{{animation}}"
-              src="{{like?icon_like:icon_unlike}}"
+              class="image_9" animation="{{item.animation}}"
+              src="{{item.like?icon_like:icon_unlike}}"
               />
-              <text>{{count}}</text>
+              <text>{{item.count}}</text>
             </view>
-            <navigator url="../comment/comment">
+            <navigator url="../comment/comment" bindtap="comment" data-id="{{item.id}}">
               <image
               class="image_8"
               src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679959933691.png"
@@ -58,12 +103,14 @@
     </view>
   </view>
   <view class="flex-row justify-between items-end">
-    <view class="flex-col justify-start items-center image-wrapper">
-      <image
-        class="image_10"
-        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/e2ab80141096a8d566a28bf2ee59a169.png"
-      />
-    </view>
+    <navigator url="../addComment/addComment">
+      <view class="flex-col justify-start items-center image-wrapper">
+        <image
+          class="image_10"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/e2ab80141096a8d566a28bf2ee59a169.png"
+        />
+      </view>
+    </navigator>
   </view>
   
   <!-- <image
@@ -73,5 +120,6 @@
 </view>
 <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
   <view class="modals-cancel" bindtap="hideModal"></view>
-  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" bindtap="report">举报</view>
+  <view wx:if="!{{pushmycom}}" class="bottom-dialog-body bottom-pos" animation="{{animationData}}" bindtap="report">举报</view>
+  <view wx:if="{{pushmycom}}" class="bottom-dialog-body bottom-pos" animation="{{animationData}}" bindtap="report2">删除</view>
 </view>
