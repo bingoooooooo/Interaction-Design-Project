@@ -1,35 +1,65 @@
 <view class="flex-col page">
   <view>
-    <navigator url="../userpage/userpage"  open-type="redirect">
+    <view bindtap="report">
       <image
-        class="image_0"
+        class="image_0 content0"
         src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
       />
-    </navigator>
+    </view>
+    <image bindtap="save"
+        class="image_4 pos_5 content1"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953410745620.png"
+      /> 
+  </view>
+  <view class="banner">
+    <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)"
+    indicator-active-color="#fff">
+      <swiper-item>
+        <image
+          class="image_2 pos_3"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953474347388.png"
+        />
+        <image
+          class="image pos_2"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953499763555.png"
+        />
+        <view class="flex-col justify-start items-center relative group_3">
+          <image
+            class="image_9"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953274103861.png"
+          />
+          <image
+            class="image_8 pos_14 content4"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953441375576.png"
+          />
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <image
+          class="image_11 pos_18"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/646191dd54fe000011619461/16841159929974092156.png"
+        />
+        <image
+          class="image_11 pos_2"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/646191dd54fe000011619461/16841159929965475866.png"
+        />
+        <view class="flex-col justify-start items-center relative group_3">
+          <image
+            class="image_10 pos_17"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/646191dd54fe000011619461/16841159934518856434.png"
+          />
+        </view>
+      </swiper-item>
+    </swiper>
   </view>
   <view class="flex-row relative group">
-  <view>
-  
-  </view>
     <view class="flex-row group_2 pos">
-      <!-- <image
-        class="image_4 pos_5"
-        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953410745620.png"
-      />  -->
-      <image
-        class="image_2 pos_3"
-        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953474347388.png"
-      />
-      <image
-        class="image pos_2"
-        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953499763555.png"
-      />
       <view>
         <text class="font_1 text text_2 pos_8">Date:</text>
         <text class="date">{{date}}</text>
       </view>
       <text class="font_1 text pos_12">Mood:</text>
-      <view class="pos_16">
+      <view class="pos_16 content2">
         <image
           class="image_5 image_6" bindtap="push1" style="filter:grayscale({{isone}});" 
           src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953527721330.png"
@@ -48,18 +78,8 @@
         />
       </view>
       <view class="divider pos_13"></view> 
-      <input class="input" style="border-color: {{bordercolor}};" name="userName" placeholder="点击虚线框内位置输入" bindblur="border" />
+      <input class="input content3" style="border-color: {{bordercolor}};" name="userName" placeholder="{{content?content:placeholder}}" bindblur="border" />
     </view>
-    
-  </view>
-  <view class="flex-col justify-start items-center relative group_3">
-    <image
-      class="image_9"
-      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953274103861.png"
-    />
-    <image
-      class="image_8 pos_14"
-      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953441375576.png"
-    />
   </view>
 </view>
+<guide-step step="{{step}}"></guide-step>

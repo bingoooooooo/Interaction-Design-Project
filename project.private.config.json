@@ -3,5 +3,18 @@
   "projectname": "Interaction%20Design%20Project",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "letter0",
+          "pathName": "pages/letter0/letter0",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

@@ -14,11 +14,17 @@ App({
     count3:0,
     count4:0,
     count5:0,
-    comCount:3,
+    comcount:3,
+    comcount2:3,
+    comcount3:3,
+    comcount4:3,
+    comcount5:3,
     content:'',
-    flag:false,
+    //flag:false,
     comment:'',
     mycom:'',
     showme:false,
+    id:'',
+    letter:''
   }
 })

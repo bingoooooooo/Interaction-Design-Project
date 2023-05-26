@@ -95,7 +95,7 @@
               class="image_8"
               src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679959933691.png"
               />
-              <text>{{comCount}}</text>
+              <text>{{item.comcount}}</text>
             </navigator>
           </view>
         </view>

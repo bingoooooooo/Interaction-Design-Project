@@ -9,6 +9,7 @@ Page({
         like:'',
         count:'',
         animationData:{},
+        comcount:'',
       },
       {
         name:"迪迦",
@@ -17,6 +18,7 @@ Page({
         like:'',
         count:'',
         animationData:{},
+        comcount:'',
       },
       {
         name:"赛文",
@@ -25,6 +27,7 @@ Page({
         like:'',
         count:'',
         animationData:{},
+        comcount:'',
       },
       {
         name:"赛文",
@@ -33,6 +36,7 @@ Page({
         like:'',
         count:'',
         animationData:{},
+        comcount:'',
       },
       {
         name:"赛文",
@@ -41,12 +45,11 @@ Page({
         like:'',
         count:'',
         animationData:{},
+        comcount:'',
       },
     ],
     icon_like:'https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548175707643912.png',
     icon_unlike:'https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/6458511ab98f5d001167aa35/16835096679921619599.png',
-    
-    comCount:'',
     hideModal:true,
     animationData:{},
     showme:'',
@@ -202,7 +205,11 @@ Page({
       'obj[2].count':app.globalData.count3,
       'obj[3].count':app.globalData.count4,
       'obj[4].count':app.globalData.count5,
-      comCount:app.globalData.comCount,
+      'obj[0].comcount':app.globalData.comcount,
+      'obj[1].comcount':app.globalData.comcount2,
+      'obj[2].comcount':app.globalData.comcount3,
+      'obj[3].comcount':app.globalData.comcount4,
+      'obj[4].comcount':app.globalData.comcount5,
       showme:app.globalData.showme,
       mycom:app.globalData.mycom,
       pushmycom:false,
@@ -307,13 +314,14 @@ Page({
     })
   },
   comment:function(e){
-    if(e.currentTarget.dataset.id)
+    let i=e.currentTarget.dataset.id
+    if(i)
     {
-      let i=e.currentTarget.dataset.id
       app.globalData.comment=this.data.obj[i-1].content
     }
     else{
       app.globalData.comment=this.data.mycom
     }
+    app.globalData.id=i
   }
 });

@@ -46,14 +46,54 @@ Page({
     return {};
   },
   onShow(){
+    let id=app.globalData.id
+    if(id==1){
+      this.setData({
+        comCount:app.globalData.comcount,
+      })
+    }
+    else if(id==2){
+      this.setData({
+        comCount:app.globalData.comcount2,
+      })
+    }
+    else if(id==3){
+      this.setData({
+        comCount:app.globalData.comcount3,
+      })
+    }
+    else if(id==4){
+      this.setData({
+        comCount:app.globalData.comcount4,
+      })
+    }
+    else if(id==5){
+      this.setData({
+        comCount:app.globalData.comcount5,
+      })
+    }
+    else{
+      this.setData({
+        comCount:app.globalData.mycomcount,
+      })
+    }
     this.setData({
       count:app.globalData.count,
       like:app.globalData.like,
-      comCount:app.globalData.comCount,
       content:app.globalData.content,
-      flag:app.globalData.flag,
       c:app.globalData.comment
     })
+    if((id&&this.data.comCount==4)||(!id&&this.data.comCount==1)){
+      this.setData({
+        flag:true
+      })
+    }
+    else{
+      this.setData({
+        flag:false
+      })
+    }
+
   },
   bindfocus(e){
     console.log(e, '键盘弹起')
@@ -78,7 +118,6 @@ Page({
     })
   },
   sendOut(){
-    //let {content}=this.data 
     if(this.data.content&&this.data.flag==false){
       this.setData({
         comCount:this.data.comCount+1,
@@ -86,7 +125,25 @@ Page({
       })
       app.globalData.content=this.data.content
       app.globalData.flag=this.data.flag
-      app.globalData.comCount=this.data.comCount
+      let id=app.globalData.id
+      if(id==1){
+        app.globalData.comcount=this.data.comCount
+      }
+      else if(id==2){
+        app.globalData.comcount2=this.data.comCount
+      }
+      else if(id==3){
+        app.globalData.comcount3=this.data.comCount
+      }
+      else if(id==4){
+        app.globalData.comcount4=this.data.comCount
+      }
+      else if(id==5){
+        app.globalData.comcount5=this.data.comCount
+      }
+      else{
+        app.globalData.mycomcount=this.data.comCount
+      }
     }
   },
   com(){
@@ -105,7 +162,26 @@ Page({
             comCount:this.data.comCount-1,
             content:''
           })
-          app.globalData.flag=this.data.flag
+          //app.globalData.flag=this.data.flag
+          let id=app.globalData.id
+          if(id==1){
+            app.globalData.comcount=this.data.comCount
+          }
+          else if(id==2){
+            app.globalData.comcount2=this.data.comCount
+          }
+          else if(id==3){
+            app.globalData.comcount3=this.data.comCount
+          }
+          else if(id==4){
+            app.globalData.comcount4=this.data.comCount
+          }
+          else if(id==5){
+            app.globalData.comcount5=this.data.comCount
+          }
+          else{
+            app.globalData.mycomcount=this.data.comCount
+          }
           app.globalData.comCount=this.data.comCount
           app.globalData.content=this.data.content
         }

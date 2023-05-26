@@ -2,7 +2,7 @@
   <view class="text1">
     匿名交流
   </view>
-  <view class="text2" bindtap="save">提交</view>
+  <view class="text2" bindtap="save">发表</view>
   <view bindtap="report">
     <image
       class="image_11"

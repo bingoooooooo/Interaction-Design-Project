@@ -7,7 +7,7 @@
     #f3991adb 94%,
     #5869176b 100%
   );
-  height: 100%;
+  height: 105%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -120,13 +120,18 @@
   top: 20.15rpx;
 }
 .image_4 {
-  width: 61.33rpx;
-  height: 56.07rpx;
+  width: 72.46rpx;
+  height: 57.97rpx;
+  opacity: 0.37;
+  position: absolute;
+  top:0px;
+  right:20px;
+  z-index: 2;
 }
 .pos_5 {
   position: absolute;
   right: 56.07rpx;
-  top: 28.91rpx;
+  top: 25rpx;
 }
 .image_2 {
   width: 320.68rpx;
@@ -161,10 +166,10 @@
   top: 110px;
   margin-bottom: 20px;
   left:-35px;
+  height:60rpx;
 }z
 .pos_10 {
   position: relative;
-  /* top: -10px; */
 }
 .group_3 {
   margin-top: -43.81rpx;
@@ -188,4 +193,33 @@
   right: 0;
   top: 0;
   z-index: 1;
+}
+.banner{ 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.banner swiper{ 
+  height: 100%;
+  width: 100%;
+}
+.image_10 {
+  width: 750rpx;
+  height: 1074.18rpx;
+}
+.pos_17 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -140px;
+}
+.image_11{
+  width: 400.68rpx;
+  height: 304.3rpx;
+}
+.pos_18{
+  position: absolute;
+  left: -80rpx;
+  top: -25rpx;
 }
