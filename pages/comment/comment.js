@@ -1,4 +1,7 @@
 var app=getApp();
+import {
+  formatDate
+} from '../../utils/util';
 Page({
   data: {
     icon_like:'https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/645653dc5a7e3f0310b971f6/645856a0b98f5d001167ad7b/16835548175707643912.png',
@@ -12,7 +15,8 @@ Page({
     flag:'',
     hideModal:true,
     animationData:{},
-    c:''
+    c:'',
+    date:''
   },
   onLike(e){
     wx.vibrateShort({
@@ -44,6 +48,12 @@ Page({
   },
   onShareAppMessage() {
     return {};
+  },
+  onLoad(options){
+    var DATE=formatDate(new Date());
+    this.setData({
+      date:DATE,
+    })
   },
   onShow(){
     let id=app.globalData.id

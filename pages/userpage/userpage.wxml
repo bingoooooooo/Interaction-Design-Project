@@ -20,10 +20,6 @@
         class="image_3 pos_2"
         src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943676019152375.png"
       />
-      <image
-        class="image pos"
-        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943674309492455.png"
-      />
     </view>
     <view class="flex-row self-start section">
       <image
@@ -50,21 +46,14 @@
         <view class="section_5">
           <view class="word_middle">0</view>
           <view class="word_bottom">消息</view>
-        </view>
-
-
-        
+        </view>  
       </view>
       <view class="flex-col section_6">
         <view class="font1">周心情指数</view>
-        <view class="flex-col justify-start items-start relative group_5">
-          
+        <view class="flex-col justify-start items-start relative group_5">     
           <view class="flex-col section_7 pos_6">
-          
-            <view class="flex-row justify-between items-center group_6">
-              
+            <view class="flex-row justify-between items-center group_6">    
             </view>
-            
           </view>
           <image
             class="image_7 pos_5"
@@ -86,7 +75,6 @@
       </view>
     </view>
     <view class="flex-col">
-      
       <view class="flex-col justify-start relative group_9">
         <navigator url="../letter0/letter0" open-type="redirect">
          <view class="section_9">
@@ -99,16 +87,17 @@
           />
         </navigator>
       </view>
-      
       <view class="flex-col justify-start relative group_9">
-        <view class="section_9">
-          <text class="word_left">提醒</text>
-          <text class="word_right">REMIND</text>
-        </view>
-        <image
-          class="image_17"
-          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943672044416433.png"
-        />
+        <navigator url="../reminder/reminder" open-type="redirect">
+          <view class="section_9">
+            <text class="word_left">提醒</text>
+            <text class="word_right">REMIND</text>
+          </view>
+          <image
+            class="image_17"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943672044416433.png"
+          />
+        </navigator>
       </view>
       <view class="flex-col justify-start relative group_9">
         <navigator url="../community/community" open-type="redirect">
@@ -123,14 +112,16 @@
         </navigator>
       </view>
       <view class="flex-col justify-start relative group_9">
-        <view class="section_9">
-          <text class="word_left">主页面</text>
-          <text class="word_right">HOME</text>
-        </view>
-        <image
-          class="image_17"
-          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943672411961908.png"
-        />
+        <navigator url="../mainpage/mainpage" open-type="redirect">
+          <view class="section_9">
+            <text class="word_left">主页面</text>
+            <text class="word_right">HOME</text>
+          </view>
+          <image
+            class="image_17"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943672411961908.png"
+          />
+        </navigator>
       </view>
     </view>
   </view>

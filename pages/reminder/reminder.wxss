@@ -1,0 +1,147 @@
+.page {
+  background-image: linear-gradient(180deg, #f8bc68bf 0%, #fedf719e 24.6%, #f49512bf 100%);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.color-red{
+  color: red;
+}
+.color-gray{
+  color: gray;
+}
+.color-sign{
+  background-color: #f49512bf;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+.cur-date{
+  text-decoration: underline;
+}
+.curdate-block{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+.curdate-block button{
+  margin: 0px 30px;
+  background-color: #f8bc68bf;
+  color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+}
+.curdate-block text{
+  line-height: 50px;
+  font-size: 20px;
+}
+.calendar-block{
+  margin-top: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  padding-left: 5px;
+}
+.calendar-day{
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 3px;
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 18px;
+}
+.sign-btn{
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #49b5f6;
+  color: #FFFFFF;
+  letter-spacing: 5px;
+  padding: 0px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.text0 {
+  line-height: 13.14rpx;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 55px;
+}
+.topmenu{
+  position: fixed;
+  z-index: 2;
+  top:0px;
+  background-color: #e9e9e9;
+  width:100%;
+  height:60px;
+  margin-bottom: 0px;
+}
+.image2 {
+  opacity: 0.37;
+  width: 72.46rpx;
+  height: 57.97rpx;
+  position: absolute;
+  top:12px;
+  left:10px;
+  z-index: 2;
+}
+.text-wrapper_2 {
+  margin: 0 3.5rpx;
+  padding: 38.55rpx 0 210.28rpx;
+  background-image: linear-gradient(180deg, #f5bd5e 0%, #fd9928 100%);
+  border-radius: 35.05rpx;
+  box-shadow: 0px 5.26rpx 10.51rpx #4a00f75e inset;
+}
+.text {
+  margin-left: 45.56rpx;
+  color: #918b7f;
+  font-size: 35.05rpx;
+  font-family: SegoeScript-Bold;
+  font-weight: 700;
+  line-height: 26.29rpx;
+}
+.pos{
+  position: relative; 
+  left: 45rpx; 
+  top: -538rpx; 
+  width: 658rpx; 
+  height: 272rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.pos2{
+  position: relative; 
+  left: 0rpx; 
+  top: -599rpx
+}
+.pos3{
+  position: relative; 
+  left: 0rpx; 
+  top: -232rpx
+}
+.pos4{
+  position: relative; 
+  left: 0rpx; 
+  top: 62rpx
+}
+.input{
+  font-size: 15px;
+  position: relative;
+  left: 44rpx;
+  top: 35rpx;
+  width: 572rpx; 
+}
+.text2{
+    color: #918b7f;
+}

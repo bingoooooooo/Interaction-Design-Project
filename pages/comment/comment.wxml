@@ -75,7 +75,7 @@
     </view>
     <view class="flex-row justify-between items-center group_10">
       <view class="flex group_7">
-        <text class="self-start font_4">04-13</text>
+        <text class="self-start font_4">{{date}}</text>
         <text class="self-end font_5 text_6">回复</text>
         <text class="self-end font_5 text_6" bindtap="del">删除</text>
       </view>
@@ -94,7 +94,7 @@
     </view>
     <view class="flex-row justify-between items-center group_10">
       <view class="flex group_7">
-        <text class="self-start font_4">04-13</text>
+        <text class="self-start font_4">2023-04-13</text>
         <text class="self-end font_5 text_6">回复</text>
       </view>
     </view>
@@ -112,7 +112,7 @@
     </view>
     <view class="flex-row justify-between items-center group_6">
       <view class="flex group_7">
-        <text class="self-start font_4">04-13</text>
+        <text class="self-start font_4">2023-04-13</text>
         <text class="self-end font_5 text_6">回复</text>
       </view>
     </view>
@@ -134,7 +134,7 @@
     </view>
     <view class="flex-row justify-between items-center group_10">
       <view class="flex group_7">
-        <text class="self-start font_4">04-13</text>
+        <text class="self-start font_4">2023-04-13</text>
         <text class="self-end font_5 text_6">回复</text>
       </view>
     </view>

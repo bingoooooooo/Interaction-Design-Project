@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/startpage/startpage",
+    "pages/reminder/reminder",
     "pages/letter0/letter0",
     "pages/userpage/userpage",
     "pages/community/community",
     "pages/comment/comment",
-    
-    "pages/addComment/addComment"
+    "pages/addComment/addComment",
+    "pages/mainpage/mainpage"
   ],
   "window": {
     "backgroundTextStyle": "light",

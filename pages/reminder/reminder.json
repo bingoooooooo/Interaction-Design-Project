@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "guide-step":"../../components/xky-guideStep/xky-guideStep"
+  }
+}
