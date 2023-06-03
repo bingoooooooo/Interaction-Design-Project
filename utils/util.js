@@ -15,6 +15,13 @@ const formatDate=date=>{
  
   return [year,month,day].map(formatNumber).join('-')
 }
+const formatBeforeDate=(date,len)=>{
+  date.setDate(date.getDate()-len)
+  const year=date.getFullYear()
+  const month=date.getMonth()+1
+  const day=date.getDate()
+  return [year,month,day].map(formatNumber).join('-')
+}
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : `0${n}`
@@ -22,4 +29,5 @@ const formatNumber = n => {
 module.exports = {
   formatTime,
   formatDate,
+  formatBeforeDate,
 }

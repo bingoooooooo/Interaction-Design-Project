@@ -1,0 +1,59 @@
+<view class="flex-col page">
+  <view>
+    <navigator url="../mainpage/mainpage"  open-type="redirect">
+      <image
+        class="image_0 content0"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
+      />
+    </navigator>
+  </view>
+  <image
+    class="image_2 pos_3"
+    src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953474347388.png"
+  />
+  <image
+    class="image pos_2"
+    src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953499763555.png"
+  />
+  <view class="flex-col justify-start items-center relative group_3">
+    <image
+      class="image_9"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953274103861.png"
+    />
+    <image
+      class="image_8 pos_14 content4"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953441375576.png"
+    />
+  </view>
+  <view class="flex-row relative group">
+    <view class="flex-row group_2 pos">
+      <view>
+        <text class="font_1 text text_2 pos_8">Date:</text>
+        <picker class ="date" mode="date" value="{{date}}" start="2023-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+        {{date}}
+        </picker>
+      </view>
+      <text class="font_1 text pos_12">Mood:</text>
+      <view class="pos_16 content2">
+        <image
+          class="image_5 image_6" style="filter:grayscale({{isone}});" 
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953527721330.png"
+        />
+        <image
+          class="image_5 image_7" style="filter:grayscale({{istwo}});"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173955690046481.png"
+        />
+        <image
+          class="image_5 image_7" style="filter:grayscale({{isthree}});"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/16836173953535385352.png"
+        />
+        <image
+          class="image_5 image_7" style="filter:grayscale({{isfour}});"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6459f52854fe000011601694/73ea4b65620b7a78be375747f3f62a09.png"
+        />
+      </view>
+      <view class="divider pos_13"></view> 
+      <text class="input"style="width: 602rpx; height: 800rpx; display: flex; box-sizing: border-box; left: 62rpx; top: 298rpx">{{content}}</text>
+    </view>
+  </view>
+</view>

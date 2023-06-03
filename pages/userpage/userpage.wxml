@@ -1,7 +1,12 @@
 <view class="flex-col page space-y-7">
+  <navigator url="../mainpage/mainpage" open-type="redirect">
+      <image style="position: absolute; left: 44rpx; top: 192rpx" class="image2"
+        src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
+      />
+    </navigator>
   <view class="flex-row justify-between">
     <view class="flex-col justify-start items-end relative group">
-      <view class="flex-col justify-start items-center relative section_2">
+      <view class="flex-col justify-start items-center relative section_2 pos1">
         <view class="flex-col justify-start items-center image-wrapper">
           <image
             class="image_5"
@@ -16,12 +21,12 @@
           <view class="section_4"></view>
         </view>
       </view>
-      <image
+      <image style="position: absolute; left: 251rpx; top: 123rpx"
         class="image_3 pos_2"
         src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943676019152375.png"
       />
     </view>
-    <view class="flex-row self-start section">
+    <view class="flex-row self-start section" style="position: relative; left: -4rpx; top: 71rpx">
       <image
         class="image_2"
         src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825943677278654792.png"

@@ -78,7 +78,7 @@
         />
       </view>
       <view class="divider pos_13"></view> 
-      <input class="input content3" style="border-color: {{bordercolor}};" name="userName" placeholder="{{content?content:placeholder}}" bindblur="border" />
+      <textarea class="input" style="border-color: {{bordercolor}}; width: 602rpx; height: 800rpx; display: flex; box-sizing: border-box; left: 62rpx; top: 298rpx" name="userName" placeholder="{{content?content:placeholder}}" bindblur="border" />
     </view>
   </view>
 </view>

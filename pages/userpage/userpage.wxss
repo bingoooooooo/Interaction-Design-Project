@@ -319,3 +319,17 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+.pos1{
+  position: relative; 
+  left: 2rpx; 
+  top: 79rpx
+}
+.image2 {
+  opacity: 0.37;
+  width: 72.46rpx;
+  height: 57.97rpx;
+  position: absolute;
+  top:12px;
+  left:10px;
+  z-index: 2;
+}

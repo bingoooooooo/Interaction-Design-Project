@@ -1,2 +1,84 @@
-<!--pages/mainpage/mainpage.wxml-->
-<text>pages/mainpage/mainpage.wxml</text>
+<view class="flex-col page">
+  <view class="flex-col justify-start items-start flex-auto relative group">
+    <image class="image pos0"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/16855051962122850305.png"
+    />
+    <image class="image_2 pos1"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/16855051962175462788.png"
+    />
+    <image
+      class="image_2 pos2"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/16855051962175462788.png"
+    />
+    <image
+      class="image_3 pos_4"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/16855051965118262193.png"
+    />
+    <view style="height:0">
+      <view class="flex-col justify-start items-center text-wrapper pos5">
+        <text class="font_2 text_5" style="position: relative; left: -2rpx; top: 9rpx"
+        bindtap="push" data-id="7">Ram</text>
+      </view>
+      <view class="flex-col justify-start items-center text-wrapper_3 pos6" data-id="0"
+      bindtap="push">
+        <text class="font_2 text_5">Sun</text>
+        <image src="../../image/butterfly.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -69rpx" wx:if="{{week[0]}}"></image>
+      </view>
+      <view class="flex-col justify-start items-center self-end text-wrapper_3 pos7" data-id="6"
+      bindtap="push">
+        <text class="font_2 text_5">Sat</text>
+        <image src="../../image/dog.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -69rpx" wx:if="{{week[6]}}"></image>
+      </view>
+      <view class="flex-col justify-start items-center self-end text-wrapper_3 view pos8" data-id="5" bindtap="push">
+        <text class="font_2 text_5">Fri</text>
+        <image src="../../image/elephant.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -63rpx" wx:if="{{week[5]}}"></image>
+      </view>
+      <view class="flex-col justify-start items-center text-wrapper_3 pos9" data-id="4"
+      bindtap="push">
+        <text class="font_2 text_5">Thu</text>
+        <image src="../../image/whale.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -63rpx" wx:if="{{week[4]}}"></image>
+      </view>
+      <view class="flex-col justify-start items-center text-wrapper_3 pos10" data-id="2"
+      bindtap="push">
+        <text class="font_2 text_5">Tue</text>
+        <image src="../../image/monkey.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -63rpx" wx:if="{{week[2]}}"></image>
+      </view>
+      <view class="flex-col justify-start items-center text-wrapper_3 pos11" data-id="3"
+      bindtap="push">
+        <text class="font_2 text_5">Wed</text>
+        <image src="../../image/cat.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -63rpx" wx:if="{{week[3]}}"></image>
+      </view>
+      <view class="flex-col justify-start items-center text-wrapper_3 pos12" data-id="1"
+      bindtap="push">
+        <text class="font_2 text_5">Mon</text>
+        <image src="../../image/kola.png" style="height: 25px; width: 25px; position: relative; left: 0rpx; top: -65rpx" wx:if="{{week[1]}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col justify-start relative tab-bar">
+    <view class="flex-row section_2 space-x-52">
+      <navigator url="../reminder/reminder">
+        <image style="width: 60rpx; height: 53rpx; display: inline-block; box-sizing: border-box"
+          class="image_5 image_6"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/02904e448afe7a133b8fea156a0fd1f0.png"
+        />
+        </navigator>
+        <navigator url="../community/community">
+          <image class="image_5 pos15"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/819c30cbe2e832ba10fdf3ae7cf60c74.png"
+          />
+      </navigator>
+      <navigator url="../userpage/userpage">
+        <image
+          class="image_5 pos16"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/f4f089ad1d69069d050a59c4fe9c380e.png"
+        />
+      </navigator>
+      <navigator url="../letter0/letter0">
+        <image class="image_4 style1 pos14"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/6476c47654fe00001165b1e0/16855051962257533167.png"
+        />
+      </navigator>
+    </view>
+  </view>
+</view>

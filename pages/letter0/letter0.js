@@ -12,6 +12,7 @@ Page({
     bordercolor:"#f49512a1",
     content:'',
     placeholder:"点击虚线框内输入",
+    day:'',
     step:{
       name:"workbenchKey",
       guideList:[
@@ -48,6 +49,11 @@ Page({
     this.setData({
       date:DATE,
       content:app.globalData.letter
+    })
+    var weekArray = new Array(0, 1, 2, 3, 4, 5, 6)
+    var week =weekArray[new Date(this.data.date).getDay()]
+    this.setData({
+      day:week
     })
   },
   push1(e){
@@ -124,7 +130,7 @@ Page({
       complete: (res) => {
         if (res.confirm) {
           wx.redirectTo({
-            url: '../userpage/userpage',
+            url: '../mainpage/mainpage',
           })
         }
         if (res.cancel) {
@@ -144,5 +150,8 @@ Page({
         }
       }
     })
+    app.globalData.week[this.data.day]=1
+    app.globalData.mon[this.data.day]=this.data.content
   },
+
 });

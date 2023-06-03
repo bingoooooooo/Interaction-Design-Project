@@ -3,7 +3,7 @@
     <view class="text">
       匿名交流
     </view>
-    <navigator url="../userpage/userpage"  open-type="redirect">
+    <navigator url="../mainpage/mainpage"  open-type="redirect">
       <image
         class="image_2"
         src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/644a57105a7e3f031014e10b/644a574854fe0000115d8c12/16825952591580087386.png"
